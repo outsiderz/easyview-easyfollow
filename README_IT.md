@@ -116,6 +116,19 @@ Per ogni utente monitorato vengono creati:
 
 ---
 
+## Scheda per la dashboard
+
+Per mostrare il valore sulla dashboard, [SugarTV Card](https://github.com/wiltodelta/homeassistant-sugartv-card) (HACS) funziona direttamente con questa integrazione. Seleziona il sensore della glicemia e la scheda rileverà automaticamente la tendenza e i minuti dall'ultimo aggiornamento:
+
+```yaml
+type: custom:sugartv-card
+glucose_value: sensor.patient_glucose
+```
+
+![SugarTV Card in uno slot largo e uno verticale](https://raw.githubusercontent.com/wiltodelta/homeassistant-sugartv-card/v0.22.0/sugartv-card-layouts.png)
+
+---
+
 ## Modifica delle soglie di allerta
 
 Le soglie possono essere modificate in qualsiasi momento senza reinstallare:
