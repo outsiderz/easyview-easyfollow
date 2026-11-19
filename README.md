@@ -116,6 +116,19 @@ For each monitored user, the following are created:
 
 ---
 
+## Dashboard card
+
+To display the reading on a dashboard, [SugarTV Card](https://github.com/wiltodelta/homeassistant-sugartv-card) (HACS) works with this integration out of the box. Select the glucose sensor, and it picks up `Glucose Trend` and `Minutes since update` automatically:
+
+```yaml
+type: custom:sugartv-card
+glucose_value: sensor.patient_glucose
+```
+
+![SugarTV Card in a wide and a tall dashboard slot](https://raw.githubusercontent.com/wiltodelta/homeassistant-sugartv-card/v0.22.0/sugartv-card-layouts.png)
+
+---
+
 ## Modifying alert thresholds
 
 Thresholds can be changed at any time without reinstalling:

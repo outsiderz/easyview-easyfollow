@@ -116,6 +116,19 @@
 
 ---
 
+## Карточка для дашборда
+
+Для вывода текущих показаний на панель подойдет [SugarTV Card](https://github.com/wiltodelta/homeassistant-sugartv-card) (HACS), которая работает с этой интеграцией из коробки. Достаточно выбрать сенсор глюкозы, а тренд и время с последнего обновления подтянутся автоматически:
+
+```yaml
+type: custom:sugartv-card
+glucose_value: sensor.patient_glucose
+```
+
+![SugarTV Card в широком и вертикальном слоте](https://raw.githubusercontent.com/wiltodelta/homeassistant-sugartv-card/v0.22.0/sugartv-card-layouts.png)
+
+---
+
 ## Изменение порогов оповещений
 
 Пороги можно изменить в любое время без переустановки:
